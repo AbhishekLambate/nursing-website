@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Failed – NursingCNE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f172a, #450a0a);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 24px;
+            padding: 56px 48px;
+            text-align: center;
+            max-width: 480px;
+            width: 100%;
+            box-shadow: 0 20px 80px rgba(0, 0, 0, .3);
+            animation: pop 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @keyframes pop {
+            from {
+                transform: scale(0.92);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .icon-wrap {
+            width: 88px;
+            height: 88px;
+            background: #fee2e2;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 28px;
+            font-size: 44px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #475569;
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 100px;
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #1e4fc5, #06b6d4);
+            color: white;
+            box-shadow: 0 4px 20px rgba(30, 79, 197, .35);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-ghost {
+            border: 2px solid #e2e8f0;
+            color: #475569;
+        }
+
+        .btn-ghost:hover {
+            background: #f8fafc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="icon-wrap">❌</div>
+        <h1>Payment Failed</h1>
+        <p>Your payment was not completed. This could happen due to a network issue or payment cancellation. Your
+            registration has been saved — please try again.</p>
+        <div class="actions">
+            <a href="/#offers" class="btn btn-primary">Try Again</a>
+            <a href="/" class="btn btn-ghost">Back to Home</a>
+        </div>
+    </div>
+</body>
+
+</html>

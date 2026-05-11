@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-multipart
+passlib
+bcrypt
+PyJWT
+python-dotenv
+requests
+openpyxl
+aiofiles
+slowapi==0.1.9
+pandas==2.1.2
+email-validator==2.1.0.post1
