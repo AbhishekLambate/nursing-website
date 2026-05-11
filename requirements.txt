@@ -9,5 +9,5 @@ requests
 openpyxl
 aiofiles
 slowapi==0.1.9
-pandas==2.1.2
+pandas>=2.2.3
 email-validator==2.1.0.post1
